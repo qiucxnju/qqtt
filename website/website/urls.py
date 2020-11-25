@@ -19,6 +19,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('blog/', include('qtblog.urls')),
+    path('findpapa/', include('qtfindpapa.urls')),
+    path('tool/', include('qttool.urls')),
     path('member', views.member),
     path('contact', views.contact),
     path('sendMail', views.sendMail),
