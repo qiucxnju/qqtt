@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from . import views
+from . import auth
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,7 @@ urlpatterns = [
     path('contact', views.contact),
     path('sendMail', views.sendMail),
     path('', views.index),
+    path('login', auth.login_view),
+    path('logout', auth.logout_view),
+    path('register', auth.register),
 ]

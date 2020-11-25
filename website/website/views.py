@@ -40,6 +40,3 @@ def sendMail(request):
         logging.error(exstr)
         smtp.quit()
         return HttpResponse("发送失败")
-
-def error(request):
-    return index(request)
