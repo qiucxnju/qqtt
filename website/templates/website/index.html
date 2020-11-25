@@ -1,0 +1,23 @@
+{% extends "design/base.html" %}
+{% block content %}
+<div class="container qtback_home" >
+    <div class="page-header">
+        <h1 class="display-3">关于我们</h1>
+    </div>
+    <div class="jumbotron qtcover" >
+        <p class="lead">大家好，这里是曦跳家（邱晨曦+傅蕾）的主页。</p>
+        <p class="lead">这个网站主要用来记录家庭的美好瞬间，同时也为家庭提供IT技术支持。</p>
+        <hr class="my-4">
+        <p>我们的核心理念是：</p>
+        <p>每个家庭成员都是独立自主的，每个人根据自己擅长的不同为家庭做贡献，同时收获其他家庭成员尊重与帮助。</p>
+        <p>我们希望邀请更多志同道合的朋友们加入我们的家庭活动。</p>
+        <hr class="my-4">
+        <p>近期活动</p>
+        <ul>
+            {%for e in event%}
+            <li>{{e.title}}</li>
+            {%endfor%}
+        </ul>
+    </div>
+</div>
+{% endblock %}

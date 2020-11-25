@@ -1,0 +1,29 @@
+{% extends "design/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container qtback_member" >
+    <div class="page-header">
+        <h1 class="display-3">核心成员</h1>
+    </div>
+    <div class="jumbotron qtcover" >
+        <h2 >初创成员</h2>
+        <div class="row">
+            {% for member in core%}
+            <div class="col-md-2">
+                <img src="{%static 'img/member/'|add:member.img%}" class='qthead'>
+            </div>
+            <div class="col-md-4">
+                {{member.name}}
+                <ul>
+                    {%for skill in member.skill %}
+                    <li>{{skill}}</li>
+                    {%endfor%}
+                </ul>
+            </div>
+            {%endfor%}
+        </div>
+        <hr class="my-2">
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,27 @@
+{% extends "design/base.html" %}
+{% load static %}
+{% block head %}
+  <script src="{% static 'js/mail.js' %}"></script>
+{% endblock %}
+{% block content %}
+<div class="container" >
+    <div class="page-header">
+        <h1 class="display-3">联系我们</h1>
+    </div>
+    <div class="jumbotron qtcover" >
+        <form action="" method="post" onsubmit="return false;">
+            {% csrf_token %}
+            <label for="contact">发送邮件至管理员:</label>
+          <div class="form-group"> 
+            <label for="contact">联系方式:</label>
+            <input id="contact" name="contact" type="text" class="form-control"  aria-describedby="basic-addon1"/>
+          </div>
+          <div class="form-group"> 
+            <label for="content">内容:</label>
+            <textarea id="content" name="content" class="form-control" rows="15" ></textarea>
+          </div>
+          <button onclick="send_mail()" class="btn btn-info">提交</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
