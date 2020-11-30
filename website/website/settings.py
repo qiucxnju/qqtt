@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+import logging
 from website.mylogging import LOGGING
 import yaml
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'qtblog',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,4 @@ STATIC_ROOT = BASE_DIR / 'static'
 print(STATIC_ROOT)
 print(LOGGING)
 SITE = yaml.load(open("local/site.yaml", 'r'))
+logger = logging.getLogger(__name__)

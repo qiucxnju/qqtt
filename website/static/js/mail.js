@@ -1,7 +1,7 @@
 function send_mail()  {
     console.log("a");
 	$.ajax({
-		url: "/sendMail",
+		url: "/ajax/sendMail",
 		type: "POST",
 		data: {
 			csrfmiddlewaretoken: $("[name='csrfmiddlewaretoken']").val(),

@@ -3,12 +3,10 @@
 {% block head %}
   <script src="{% static 'js/mail.js' %}"></script>
 {% endblock %}
+{% block page-header %}
+    联系我们
+{% endblock %}
 {% block content %}
-<div class="container" >
-    <div class="page-header">
-        <h1 class="display-3">联系我们</h1>
-    </div>
-    <div class="jumbotron qtcover" >
         <form action="" method="post" onsubmit="return false;">
             {% csrf_token %}
             <label for="contact">发送邮件至管理员:</label>
@@ -22,6 +20,4 @@
           </div>
           <button onclick="send_mail()" class="btn btn-info">提交</button>
         </form>
-    </div>
-</div>
 {% endblock %}

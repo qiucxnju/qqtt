@@ -3,12 +3,10 @@
 {% block head %}
   <script src="{% static 'js/mail.js' %}"></script>
 {% endblock %}
+{% block page-header %}
+注册
+{% endblock %}
 {% block content %}
-<div class="container" >
-    <div class="page-header">
-        <h1 class="display-3">注册</h1>
-    </div>
-    <div class="jumbotron qtcover" >
         <form action="" method="post">
             {% csrf_token %}
           <div class="form-group"> 
@@ -33,6 +31,4 @@
           </div>
           <button  class="btn btn-info">提交</button>
         </form>
-    </div>
-</div>
 {% endblock %}

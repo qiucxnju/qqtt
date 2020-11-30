@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from . import views
-from . import auth
+from . import views, ajax, auth
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,7 +24,9 @@ urlpatterns = [
     path('tool/', include('qttool.urls')),
     path('member', views.member),
     path('contact', views.contact),
-    path('sendMail', views.sendMail),
+    path('ajax/sendMail', ajax.sendMail),
+    path('ajax/markDown', ajax.markDown),
+    path('ajax/loadTags', ajax.loadTags),
     path('', views.index),
     path('login', auth.login_view),
     path('logout', auth.logout_view),

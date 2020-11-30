@@ -1,10 +1,21 @@
 {% extends "design/base.html" %}
+{% block page-header %}
+家庭日常
+{% endblock %}
 {% block content %}
-<div class="container" >
-    <div class="page-header">
-        <h1 class="display-3">家庭日常</h1>
-    </div>
-    <div class="jumbotron qtcover" >
-    </div>
-</div>
+{% for tag in tags %}
+<a href='/blog?tag={{tag.value}}'>#{{tag.value}}</a>
+{% endfor %}
+       <ul class="listing">
+        {% for blog in blogs %}
+          {% ifchanged blog.date.year %}
+            <li class="listing-seperator">{{blog.date.year}}</li>
+          {% endifchanged %}
+          <li class="listing-item">
+            <time datetime='{{ blog.date|date:"c" }}'>{{ blog.date|date:"c" }}</time>
+            <a href="{{blog.path}}" title="{{blog.title}}">{{blog.title}}</a>
+          </li>
+        {% endfor %}
+        
+      </ul>
 {% endblock %}

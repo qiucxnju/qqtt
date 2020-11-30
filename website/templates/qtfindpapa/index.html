@@ -1,10 +1,16 @@
 {% extends "design/base.html" %}
+{% load static %}
+{% block head %}
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qVc5YzzEIe9XGQQRqDaZhNriuI5i5ua6" crossorigin="anonymous"></script>
+<script src = "{%static 'js/map.js' %}"></script>
+{% endblock %}
 {% block content %}
 <div class="container" >
     <div class="page-header">
         <h1 class="display-3">爸爸去哪</h1>
     </div>
     <div class="jumbotron qtcover" >
+        <div id="allmap" style="width: 100%;padding:100% 0 0;"></div>
     </div>
 </div>
 {% endblock %}

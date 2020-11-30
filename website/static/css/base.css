@@ -1,14 +1,8 @@
-.qtback_home{
+.qtback{
     background-position:center;
     background-size:cover;
-    background-image:url(/static/img/about.png);
 }
 
-.qtback_member{
-    background-position:center;
-    background-size:cover;
-    background-image:url(/static/img/member.png);
-}
 
 .qtcover{
     background:rgba(7, 54, 66,0.8);

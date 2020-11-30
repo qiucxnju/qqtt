@@ -1,0 +1,81 @@
+{% extends "design/base.html" %}
+{% load static %}
+{% block head %}
+  <script src="{% static 'js/blog_edit.js' %}"></script>
+{% endblock %}
+{% block page-header %}
+编辑
+{% endblock %}
+{% block content %}
+        <form action="" method="post" onsubmit="return false;">
+  			{% csrf_token %}
+  			<div class="form-group">
+    			<label for="blog_title">标题:</label>
+    			<input id="blog_title" name="title" type="text" class="form-control" placeholder="title" aria-describedby="basic-addon1" value="{{blog.title}}"/>
+  			</div>
+  			<div class="form-group">
+    			<label for="blog_date">时间:</label>
+    			<input type="date" id="blog_date"  value='{{ blog.date|date:"c" }}'></input>
+  			</div>
+  			<div class="form-group">
+    			<label  >标签:</label>
+    			<button type="button"  class="btn btn-dark"  onclick="loadTag()" >
+    			    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                    </svg>
+    			</button>
+                <button id="tagDialogTrigger" type="button" data-toggle="modal" class="hidden btn btn-link" data-target="#tagDialog">
+                </button>
+    			<div id="selectedTag">
+      				{% for tag in blog.tags.all %}
+        			<input type="button" class="tag btn btn-dark" onclick="deleteThis(this)" value="{{tag.value}}"/>
+      				{% endfor %}
+    			</div>
+			</div>
+    		<div class="form-group">
+      			<label for="blog_content">内容:</label>
+      			<textarea id="blog_content" name="content" class="form-control" rows="15" >{{blog.content}}</textarea>
+    		</div>
+    		<button onclick="blog_submit()" class="btn btn-dark">提交</button>
+    		<button id="previewDialogTrigger" type="button" data-toggle="modal" class="hidden btn btn-link" data-target="#previewDialog"/>
+    		<button onclick="preview()" class="btn btn-dark">预览</button>
+		</form>
+{% endblock %}
+{% block popup %}
+
+    <div class="modal fade" id="tagDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" >标签:</h4>
+            <button id="tagDialogClose" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group">
+              <input id="newTagInput" type="text" class="form-control" placeholder="New Tag" aria-describedby="basic-addon2">
+              <button onclick="addTag($('#newTagInput').val())" class="btn btn-dark">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+              </svg>
+              </button>
+            </div>
+            <ul id="tagList" class="list-group">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="previewDialog" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="blog modal-dialog">
+          <div class="blog modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" >预览:</h4>
+              <button id="tagDialogClose" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="blog">
+            <section id="preview_div" class="post"/>
+            </div>
+          </div>
+      </div> 
+    </div>
+  {% endblock %}

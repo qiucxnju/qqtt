@@ -1,10 +1,12 @@
 {% extends "design/base.html" %}
+{% load static %}
+{% block head %}
+<link href="{% static 'css/homepage.css'%}" rel="stylesheet">
+{% endblock %}
+{% block page-header %}
+关于我们
+{% endblock %}
 {% block content %}
-<div class="container qtback_home" >
-    <div class="page-header">
-        <h1 class="display-3">关于我们</h1>
-    </div>
-    <div class="jumbotron qtcover" >
         <p class="lead">大家好，这里是曦跳家（邱晨曦+傅蕾）的主页。</p>
         <p class="lead">这个网站主要用来记录家庭的美好瞬间，同时也为家庭提供IT技术支持。</p>
         <hr class="my-4">
@@ -18,6 +20,4 @@
             <li>{{e.title}}</li>
             {%endfor%}
         </ul>
-    </div>
-</div>
 {% endblock %}

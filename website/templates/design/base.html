@@ -63,13 +63,25 @@
             <p class="mb-0">曦跳反应，成上启下</p>
         </blockquote>
     </div>
-{% block content %}
-{% endblock %}
+    <div class="container qtback">
+        <div class="page-header">
+            <h1 class="display-3">
+                {% block page-header %}
+                {% endblock %}
+            </h1>
+        </div>
+        <div class="jumbotron qtcover" >
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
 <footer class=" text-center mastfoot mt-auto">
     <div class="inner">
         <p>版权所有 DESIGNED BY <a href="mailto:four_qiucxnju@qq.com">QQ_TT</a></p>
     </div>
 </footer>
+{% block popup %}
+{% endblock %}
 
 </body>
 
