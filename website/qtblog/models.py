@@ -47,7 +47,7 @@ class Blog(models.Model):
 
     @staticmethod
     def create_check(user):
-        if not user.is_authenticated: 
+        if not user.is_stuff: 
             return False
         return True
     

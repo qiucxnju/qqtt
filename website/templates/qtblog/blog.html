@@ -13,7 +13,7 @@
     {{blog.content| markdown}}
   {% endautoescape %}
 </section>
-{% if user.is_authenticated %}
+{% if user.is_staff %}
   <a href='?edit='>编辑</a>
   <a href='../file/upload?title={{blog.title}}' target="view_window">上传</a>
   <br>
