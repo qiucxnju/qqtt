@@ -47,7 +47,7 @@ class Blog(models.Model):
 
     @staticmethod
     def create_check(user):
-        if not user.is_stuff: 
+        if not user.is_staff: 
             return False
         return True
     

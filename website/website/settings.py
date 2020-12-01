@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'qtblog',
+    'qtfile',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ print(STATIC_ROOT)
 print(LOGGING)
 SITE = yaml.load(open("local/site.yaml", 'r'))
 logger = logging.getLogger(__name__)
+FILE_PATH = "/file/"
+FILE_SRC = "/upload/"

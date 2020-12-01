@@ -1,5 +1,9 @@
 {% extends "design/base.html" %}
 {% load blog_filter %}
+{% load static %}
+{% block head %}
+<link href="{% static 'css/blog.css'%}" rel="stylesheet">
+{% endblock %}
 {% block content %}
 <section>
     <h1>{{blog.title}}</h1>

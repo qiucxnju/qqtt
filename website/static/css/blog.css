@@ -1,0 +1,25 @@
+blockquote {
+    border-left: 0px solid rgb(255, 255, 255);
+}
+
+blockquote img{
+  max-width:800px;
+  max-height:600px;
+  display:block;
+  margin: 0 auto;
+}
+
+blockquote, pre code {
+  padding: 0 1em;
+  font-size: 16px;
+  line-height: 1.6;
+  display: block;
+  overflow: auto; 
+}
+
+blockquote h3{
+  margin-top:0px;
+  text-align:center;
+  color:#ccc;
+  font-size:13px;
+}

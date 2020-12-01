@@ -20,6 +20,7 @@ from . import views, ajax, auth
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('qtblog.urls')),
+    path('file/', include('qtfile.urls')),
     path('findpapa/', include('qtfindpapa.urls')),
     path('tool/', include('qttool.urls')),
     path('member', views.member),
