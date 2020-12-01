@@ -1,0 +1,18 @@
+{% extends "design/base.html" %}
+{% block page-header %}
+文件列表
+{% endblock %}
+{% block content %}
+       <ul class="listing">
+        {% for file in files %}
+          {% ifchanged file.date|date:"Y-m" %}
+          <li class="listing-seperator">{{file.date|date:"Y-m"}}</li>
+          {% endifchanged %}
+          <li class="listing-item">
+              <time datetime='{{ file.date|date:"Y-m-d" }}'>{{ file.date|date:"Y-m-d" }}</time>
+            <a href="{{file.path}}" title="{{file.title}}">{{file.title}}</a>
+          </li>
+        {% endfor %}
+        
+      </ul>
+{% endblock %}

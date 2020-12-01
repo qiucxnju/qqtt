@@ -27,13 +27,10 @@ class File(models.Model):
         logger.info(path)
         files = File.objects.filter(path = path)
         logger.info(files)
-
-
         if len(files) > 0: 
             fil = files[0]
         else:  
             return None
-
         return fil
 
 

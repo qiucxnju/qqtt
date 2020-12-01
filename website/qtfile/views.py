@@ -5,7 +5,6 @@ from website.settings import logger
 import os
 
 def upload(request):
-    
     if (not File.create_check(request.user)):
         return HttpResponse("你没有权限")
     if request.method == 'POST':
@@ -15,10 +14,13 @@ def upload(request):
             rsp += '<br><a href="%s"> > ![%s](%s)</a><br>' % (fil.path, fil.title, fil.path)
         rsp += '<br>It can be directly pasted in a wiki link.';
         return HttpResponse(rsp)
-    return render(request, 'qtfile/upload.html')
+    return render(request, 'qtfile/upload.html', {'title': request.GET.get('title', None)})
 
 def list(request):
-    return HttpResponse("数据")
+    data = {
+        'files' : File.get_all()
+    }
+    return render(request, 'qtfile/index.html', data)
 
 def download(request):
     logger.info(request)
