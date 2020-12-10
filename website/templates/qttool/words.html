@@ -1,0 +1,21 @@
+{% extends "design/base.html" %}
+{% load static %}
+{% block head %}
+  <script src="{% static 'js/words.js' %}"></script>
+{% endblock %}
+{% block page-header %}
+成语接龙
+{% endblock %}
+{% block content %}
+          <div class="form-group"> 
+            <label for="contact">请输入:</label>
+            <input value="{{word}}" id="word"  type="text" class="form-control"/>
+          </div>
+          <button onclick="search_input()" class="btn btn-dark">提交</button>
+          <hr class="my-2">
+          <div class ="row">
+              {% for word in words %}
+              <div class="col-md-2"><button class="btn btn-dark" onclick="search_button(this)">{{word}}</button></div>
+              {% endfor %}
+          </div>
+{% endblock %}
