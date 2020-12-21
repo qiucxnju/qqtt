@@ -8,14 +8,62 @@
 {% endblock %}
 {% block content %}
           <div class="form-group"> 
-            <label for="contact">请输入:</label>
+            <label >请输入:</label>
             <input value="{{word}}" id="word"  type="text" class="form-control"/>
           </div>
           <button onclick="search_input()" class="btn btn-dark">提交</button>
           <hr class="my-2">
+          {% if 'name' in info %}
+          <div class="form-group"> 
+            <label>拼音:</label>
+            <p>{{info.pinyin}}<p>
+          </div>
+            {% if info.mean %}
+          <div class="form-group"> 
+            <label>解释:</label>
+            <p>{{info.mean}}</p>
+          </div>
+            {% endif %}
+            {% if info.detail %}
+          <div class="form-group"> 
+            <label>详解:</label>
+            <p>{{info.detail}}</p>
+          </div>
+            {% endif %}
+            {% if info.detail %}
+          <div class="form-group"> 
+            <label>出处:</label>
+            <p>{{info.source}}</p>
+          </div>
+            {% endif %}
+            {% if info.detail %}
+          <div class="form-group"> 
+            <label>百科:</label>
+            <p>{{info.baike}}</p>
+          </div>
+            {% endif %}
+            
+          
+          {% endif %}
+          <hr class="my-2">
+            <label>同义词:</label>
+          <div class ="row">
+              {% for word in info.syn %}
+              <div class="col-md-2"><button class="btn btn-dark" onclick="search_button(this)">{{word}}</button></div>
+              {% endfor %}
+          </div>
+          <hr class="my-2">
+            <label>反义词:</label>
+          <div class ="row">
+              {% for word in info.ant %}
+              <div class="col-md-2"><button class="btn btn-dark" onclick="search_button(this)">{{word}}</button></div>
+              {% endfor %}
+          </div>
+          <hr class="my-2">
+            <label>成语接龙:</label>
           <div class ="row">
               {% for word in words %}
-              <div class="col-md-2"><button class="btn btn-dark" onclick="search_button(this)">{{word}}</button></div>
+              <div class="col-md-2"><button class="btn btn-dark" onclick="search_button(this)">{{word.name}}</button></div>
               {% endfor %}
           </div>
 {% endblock %}
