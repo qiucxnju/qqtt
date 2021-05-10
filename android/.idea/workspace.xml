@@ -6,184 +6,37 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="System" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4b7437-adc1-4509-8ea4-dffeb204db7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../website/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/qqtt_nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qqtt_nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qqtt_socket.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qqtt_socket.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/qtblog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtblog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtblog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtblog/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/qtblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtblog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtblog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtblog/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtblog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtblog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtblog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtfindpapa/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfindpapa/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtfindpapa/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfindpapa/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtfindpapa/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfindpapa/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtfindpapa/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfindpapa/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtfindpapa/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfindpapa/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qtfindpapa/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfindpapa/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qttool/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qttool/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qttool/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qttool/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qttool/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qttool/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qttool/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qttool/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qttool/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qttool/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/qttool/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qttool/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/restart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../website/restart.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../website/start.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/autocomplete.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/autocomplete.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/changelists.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/changelists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/nav_sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/nav_sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/responsive_rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/responsive_rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/vendor/select2/LICENSE-SELECT2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/css/widgets.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/css/widgets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/fonts/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/fonts/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/calendar-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/calendar-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-addlink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-addlink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-alert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-alert.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-calendar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-changelink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-changelink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-clock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-clock.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-deletelink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-deletelink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-no.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-no.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-unknown-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-unknown-alt.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-unknown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-unknown.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-viewlink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-viewlink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/icon-yes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/icon-yes.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/inline-delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/inline-delete.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/selector-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/selector-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/sorting-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/sorting-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/tooltag-add.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/tooltag-add.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/img/tooltag-arrowright.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/img/tooltag-arrowright.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/SelectBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/SelectBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/SelectFilter2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/SelectFilter2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/actions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/actions.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/admin/DateTimeShortcuts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/admin/RelatedObjectLookups.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/autocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/cancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/cancel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/change_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/change_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/collapse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/collapse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/collapse.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/inlines.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/inlines.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/inlines.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/inlines.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/jquery.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/jquery.init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/nav_sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/nav_sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/popup_response.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/popup_response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/prepopulate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/prepopulate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/prepopulate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/prepopulate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/prepopulate_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/prepopulate_init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/urlify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/urlify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/jquery/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/bn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/dsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/dsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/hy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ne.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ps.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/tk.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/tk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/i18n/zh-TW.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/select2.full.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/select2/select2.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/xregexp/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/xregexp/xregexp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/admin/js/vendor/xregexp/xregexp.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/data/event.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/data/event.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/data/member.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/data/member.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/static/js/mail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/js/mail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/stop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../website/stop.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/design/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/design/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/design/widget.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/design/widget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/qtblog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qtblog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/qtfindpapa/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qtfindpapa/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/qttool/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qttool/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/website/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/website/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/website/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/website/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/website/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/website/member.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/website/member.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/templates/website/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/website/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/website/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/website/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/qtfile/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfile/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/qtfile/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfile/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/qtfile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfile/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/qtfile/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfile/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/qtfile/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfile/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/qtfile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/qtfile/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/../website/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/qtblog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qtblog/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/qtblog/blog_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qtblog/blog_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/qtfile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qtfile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/templates/qtfile/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/../website/templates/qtfile/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../website/upload/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../website/upload/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/website/mylogging.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/mylogging.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/website/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../website/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../website/website/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../website/website/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -191,9 +44,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="6751477d" />
   <component name="ExternalProjectsManager">
@@ -204,17 +59,54 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/BackService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="152" column="29" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1918#2248#0" expanded="true" />
+                <element signature="e#2247#2248#0" expanded="true" />
+                <element signature="e#3496#3497#0" expanded="true" />
+                <element signature="e#3963#3964#0" expanded="true" />
+                <element signature="e#4099#4100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="104">
+              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#3207#3488#0" expanded="true" />
+                <element signature="e#3487#3488#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/BootBroadcast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,23 +115,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/WebAppInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="133">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -247,17 +131,48 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/ic_launcher-web.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>android:targetSdkVersion</find>
+      <find>ELITOR_CLOCK</find>
+      <find>RECEIVE_BOOT_COMPLETED</find>
+      <find>mStartMode</find>
+      <find>service</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -265,24 +180,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/WebAppInterface.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/BootBroadcast.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qqtt/android/BackService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="242" />
-    <option name="y" value="321" />
+    <option name="x" value="-2306" />
+    <option name="y" value="-10" />
     <option name="width" value="1583" />
     <option name="height" value="1000" />
   </component>
@@ -292,9 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,7 +234,16 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android" type="b2602c69:ProjectViewProjectNode" />
+              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android" type="b2602c69:ProjectViewProjectNode" />
@@ -335,16 +252,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="drawable-v24" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android" type="b2602c69:ProjectViewProjectNode" />
@@ -362,77 +269,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-anydpi-v26" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-hdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-mdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-xhdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-xxhdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-xxxhdpi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="android" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="F:/Android/sdk/android-sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Documents\GitHub\qqtt\android\app\src\main\res\drawable-v24" />
+      <recent name="F:\Documents\GitHub\qqtt\android\app\src\main\res\mipmap-anydpi-v26" />
       <recent name="F:\Documents\GitHub\qqtt\android\app\src\main\res\drawable" />
+      <recent name="F:\Documents\GitHub\qqtt\android\app\src\main\res\drawable-v24" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -522,32 +380,43 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="242" y="0" width="1583" height="1047" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Build Variants" order="4" sideWeight="0.5024311" side_tool="true" visible="true" weight="0.2675906" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Resources Explorer" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.3296126" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49756888" visible="true" weight="0.2675906" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Logcat" order="0" weight="0.32968238" />
-      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="0" sideWeight="0.48614073" visible="true" weight="0.3308026" />
+      <window_info anchor="bottom" id="TODO" order="1" sideWeight="0.49840087" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="6" weight="0.1735358" />
-      <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.33187294" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49840087" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4989339" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5138593" side_tool="true" weight="0.30477223" />
+      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.48880598" weight="0.17136659" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" sideWeight="0.4989339" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49413645" weight="0.3308026" />
+      <window_info anchor="right" id="Assistant" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.32942432" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32889125" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
     </layout>
@@ -559,29 +428,6 @@
           <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/ic_launcher-web.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png">
       <provider selected="true" editor-type-id="images" />
@@ -613,35 +459,98 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="190">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/ic_launcher-web.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/WebAppInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/BootBroadcast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#3207#3488#0" expanded="true" />
+            <element signature="e#3487#3488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qqtt/android/BackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="152" column="29" selection-start-line="152" selection-start-column="17" selection-end-line="152" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1918#2248#0" expanded="true" />
+            <element signature="e#2247#2248#0" expanded="true" />
+            <element signature="e#3496#3497#0" expanded="true" />
+            <element signature="e#3963#3964#0" expanded="true" />
+            <element signature="e#4099#4100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
