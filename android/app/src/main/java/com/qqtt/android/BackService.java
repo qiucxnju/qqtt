@@ -1,15 +1,6 @@
 package com.qqtt.android;
 
 
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import android.app.ActivityManager;
-import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -21,6 +12,17 @@ import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.IBinder;
+
+import com.baidu.location.BDAbstractLocationListener;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class BackService extends Service {
     String base_url = "http://www.qqttgroup.com/findpapa/setLocation";
@@ -79,9 +81,82 @@ public class BackService extends Service {
     }
     Timer timer = new Timer();
     TimerTask task = new TimerTask() {
+
+        class MyLocationListener extends BDAbstractLocationListener {
+            @Override
+            public void onReceiveLocation(BDLocation location){
+                //此处的BDLocation为定位结果信息类，通过它的各种get方法可获取定位相关的全部结果
+                //以下只列举部分获取经纬度相关（常用）的结果信息
+                //更多结果信息获取说明，请参照类参考中BDLocation类中的说明
+
+                //获取纬度信息
+                double latitude = location.getLatitude();
+                //获取经度信息
+                double longitude = location.getLongitude();
+                //获取定位精度，默认值为0.0f
+                float radius = location.getRadius();
+                //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
+                String coorType = location.getCoorType();
+                //获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
+                int errorCode = location.getLocType();
+
+                String cookie = getCookie();
+
+
+                System.out.println(longitude);
+                System.out.println(latitude);
+                //sendLocation(cookie, longitude, latitude);
+            }
+        }
+        private void initLocationOption() {
+//定位服务的客户端。宿主程序在客户端声明此类，并调用，目前只支持在主线程中启动
+            LocationClient locationClient = new LocationClient(getApplicationContext());
+//声明LocationClient类实例并配置定位参数
+            LocationClientOption locationOption = new LocationClientOption();
+            MyLocationListener myLocationListener = new MyLocationListener();
+//注册监听函数
+            locationClient.registerLocationListener(myLocationListener);
+//可选，默认高精度，设置定位模式，高精度，低功耗，仅设备
+            locationOption.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
+//可选，默认gcj02，设置返回的定位结果坐标系，如果配合百度地图使用，建议设置为bd09ll;
+            locationOption.setCoorType("gcj02");
+//可选，默认0，即仅定位一次，设置发起连续定位请求的间隔需要大于等于1000ms才是有效的
+            locationOption.setScanSpan(1000);
+//可选，设置是否需要地址信息，默认不需要
+            locationOption.setIsNeedAddress(true);
+//可选，设置是否需要地址描述
+            locationOption.setIsNeedLocationDescribe(true);
+//可选，设置是否需要设备方向结果
+            locationOption.setNeedDeviceDirect(false);
+//可选，默认false，设置是否当gps有效时按照1S1次频率输出GPS结果
+            locationOption.setLocationNotify(true);
+//可选，默认true，定位SDK内部是一个SERVICE，并放到了独立进程，设置是否在stop的时候杀死这个进程，默认不杀死
+            locationOption.setIgnoreKillProcess(true);
+//可选，默认false，设置是否需要位置语义化结果，可以在BDLocation.getLocationDescribe里得到，结果类似于“在北京天安门附近”
+            locationOption.setIsNeedLocationDescribe(true);
+//可选，默认false，设置是否需要POI结果，可以在BDLocation.getPoiList里得到
+            locationOption.setIsNeedLocationPoiList(true);
+//可选，默认false，设置是否收集CRASH信息，默认收集
+            locationOption.SetIgnoreCacheException(false);
+//可选，默认false，设置是否开启Gps定位
+            locationOption.setOpenGps(true);
+//可选，默认false，设置定位时是否需要海拔信息，默认不需要，除基础定位版本都可用
+            locationOption.setIsNeedAltitude(false);
+//设置打开自动回调位置模式，该开关打开后，期间只要定位SDK检测到位置变化就会主动回调给开发者，该模式下开发者无需再关心定位间隔是多少，定位SDK本身发现位置变化就会及时回调给开发者
+            locationOption.setOpenAutoNotifyMode();
+//设置打开自动回调位置模式，该开关打开后，期间只要定位SDK检测到位置变化就会主动回调给开发者
+            locationOption.setOpenAutoNotifyMode(3000,1, LocationClientOption.LOC_SENSITIVITY_HIGHT);
+//需将配置好的LocationClientOption对象，通过setLocOption方法传递给LocationClient对象使用
+            locationClient.setLocOption(locationOption);
+//开始定位
+            locationClient.start();
+        }
         @Override
         public void run(){
+            //initLocationOption();
             String cookie = getCookie();
+
+
             Location location = getLocation();
             if (location == null)
                 return;
@@ -89,7 +164,9 @@ public class BackService extends Service {
             double lng = location.getLongitude();
             System.out.println(lat);
             System.out.println(lng);
-            sendLocation(cookie, lng, lat);
+            sendLocation(cookie, lng, lat);/*
+*/
+
         }
     };
     /** 标识服务如果被杀死之后的行为 */
@@ -106,21 +183,23 @@ public class BackService extends Service {
     /** 当服务被创建时调用. */
     @Override
     public void onCreate() {
-        frontService();
+        System.out.println("service create");
+        //frontService();
     }
 
     /** 调用startService()启动服务时回调 */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        System.out.println("service onStartCommand");
         if (!mRunning) {
             mRunning = true;
         }else{
             return 0;
         }
         System.out.println("service start");
-        timer.schedule(task, 0, 10000);
+        timer.schedule(task, 0, 5 * 1000);
 
-        return START_STICKY;
+        return START_NOT_STICKY;//START_STICKY;
     }
 
     /** 通过bindService()绑定到服务的客户端 */
@@ -146,7 +225,17 @@ public class BackService extends Service {
     public void onDestroy() {
         timer.cancel();
         System.out.println("service destroy");
+        /*
+        Intent alarm_intent = new Intent();
+        alarm_intent.setAction("ELITOR_CLOCK");
+        alarm_intent.setComponent(new ComponentName("com.qqtt.android", "com.qqtt.android.BootBroadcast"));
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
+                0, alarm_intent,
+                PendingIntent.FLAG_CANCEL_CURRENT);
+        AlarmManager am = (AlarmManager)getSystemService(ALARM_SERVICE);
+        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1 * 60 * 1000,pendingIntent);
 
+         */
     }
     String CHANNEL_ONE_ID = "com.qqttgroup.com";
     String CHANNEL_ONE_NAME = "com.qqttgroup.com";

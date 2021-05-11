@@ -1,13 +1,9 @@
 package com.qqtt.android;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.app.ProgressDialog;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.webkit.CookieManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -16,7 +12,6 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -58,17 +53,17 @@ public class MainActivity extends AppCompatActivity {
         };
         timer.schedule(cookieTask, 0, 10000);
 
+/*
         Intent alarm_intent = new Intent();
         alarm_intent.setAction("ELITOR_CLOCK");
         alarm_intent.setComponent(new ComponentName("com.qqtt.android", "com.qqtt.android.BootBroadcast"));
-        //sendBroadcast(alarm_intent);
-        /*
-         */
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
                 0, alarm_intent,
                 PendingIntent.FLAG_CANCEL_CURRENT);
         AlarmManager am = (AlarmManager)getSystemService(ALARM_SERVICE);
-        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),5 * 60 * 1000,pendingIntent);
+        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1 * 60 * 1000,pendingIntent);
+        System.out.println(getBaseContext());
+        stopService(new Intent(getBaseContext(), BackService.class));*/
         startService(new Intent(getBaseContext(), BackService.class));
     }
 
