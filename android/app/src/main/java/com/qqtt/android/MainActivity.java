@@ -19,19 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private WebView webView;
     private ProgressDialog pDialog;
     private String url = "http://www.qqttgroup.com";
-    /*
-        Handler handler = new Handler(){
-            public void handleMessage(Message msg){
-                switch(msg.what){
-                    case 200:
-                        System.out.println("执行我要做的事情用来刷新UI");
-                }
-            }
-        };
-    H
-
-        HttpHolder holder = new HttpHolder(handler);
-    */
     Timer timer = null;
 
     @Override
@@ -53,17 +40,6 @@ public class MainActivity extends AppCompatActivity {
         };
         timer.schedule(cookieTask, 0, 10000);
 
-/*
-        Intent alarm_intent = new Intent();
-        alarm_intent.setAction("ELITOR_CLOCK");
-        alarm_intent.setComponent(new ComponentName("com.qqtt.android", "com.qqtt.android.BootBroadcast"));
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
-                0, alarm_intent,
-                PendingIntent.FLAG_CANCEL_CURRENT);
-        AlarmManager am = (AlarmManager)getSystemService(ALARM_SERVICE);
-        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1 * 60 * 1000,pendingIntent);
-        System.out.println(getBaseContext());
-        stopService(new Intent(getBaseContext(), BackService.class));*/
         startService(new Intent(getBaseContext(), BackService.class));
     }
 

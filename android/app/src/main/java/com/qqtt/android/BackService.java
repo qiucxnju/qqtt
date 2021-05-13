@@ -147,28 +147,6 @@ public class BackService extends Service {
                 sendLocation(cookie, longitude, latitude);
         }
     }
-    Timer timer = new Timer();
-    TimerTask task = new TimerTask() {
-
-
-        @Override
-        public void run(){
-            initLocationOption();/*
-            String cookie = getCookie();
-
-
-            Location location = getLocation();
-            if (location == null)
-                return;
-            double lat = location.getLatitude();
-            double lng = location.getLongitude();
-            System.out.println(lat);
-            System.out.println(lng);
-            sendLocation(cookie, lng, lat);
-*/
-
-        }
-    };
     /** 标识服务如果被杀死之后的行为 */
     int mStartMode;
 
@@ -184,7 +162,6 @@ public class BackService extends Service {
     @Override
     public void onCreate() {
         System.out.println("service create");
-        //frontService();
     }
 
     /** 调用startService()启动服务时回调 */
@@ -199,7 +176,7 @@ public class BackService extends Service {
         System.out.println("service start");
         initLocationOption();
 
-        return START_NOT_STICKY;//START_STICKY;
+        return START_STICKY;
     }
 
     /** 通过bindService()绑定到服务的客户端 */
@@ -225,47 +202,5 @@ public class BackService extends Service {
     public void onDestroy() {
         locationClient.stop();
         System.out.println("service destroy");
-        /*
-        Intent alarm_intent = new Intent();
-        alarm_intent.setAction("ELITOR_CLOCK");
-        alarm_intent.setComponent(new ComponentName("com.qqtt.android", "com.qqtt.android.BootBroadcast"));
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
-                0, alarm_intent,
-                PendingIntent.FLAG_CANCEL_CURRENT);
-        AlarmManager am = (AlarmManager)getSystemService(ALARM_SERVICE);
-        am.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis(),1 * 60 * 1000,pendingIntent);
-
-         */
-    }
-    String CHANNEL_ONE_ID = "com.qqttgroup.com";
-    String CHANNEL_ONE_NAME = "com.qqttgroup.com";
-    private void frontService() {
-        NotificationChannel notificationChannel;
-//进行8.0的判断
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            notificationChannel= new NotificationChannel(CHANNEL_ONE_ID,
-                    CHANNEL_ONE_NAME, NotificationManager.IMPORTANCE_HIGH);
-            notificationChannel.enableLights(true);
-            notificationChannel.setLightColor(Color.RED);
-            notificationChannel.setShowBadge(true);
-            notificationChannel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
-            NotificationManager manager= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-            if (manager != null) {
-                manager.createNotificationChannel(notificationChannel);
-            }
-        }
-        Intent intent = new Intent(this, MainActivity.class);
-        PendingIntent pendingIntent= PendingIntent.getActivity(this, 0, intent, 0);
-        Notification notification= new Notification.Builder(this, CHANNEL_ONE_ID).setChannelId(CHANNEL_ONE_ID)
-                .setTicker("Nature")
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("这是一个测试标题")
-                .setContentIntent(pendingIntent)
-                .setContentText("这是一个测试内容")
-                .build();
-        notification.flags|= Notification.FLAG_NO_CLEAR;
-        startForeground(1, notification);
-        //发送一般通知
-       // manager.notify(1,builder.build());
     }
 }
