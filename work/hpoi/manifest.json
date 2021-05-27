@@ -1,0 +1,33 @@
+
+{
+  "name": "ZH2SBLM",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "This extension is used to disguise zhihu as sublime.",
+  "web_accessible_resources": [
+    "tasks.csv",
+    "finish.csv",
+    "users.csv"
+  ],
+  "options_page": "options.html",
+  "icons": { "64": "icon.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "options.html"
+  },
+  "background": {
+    "scripts": ["jquery.js", "background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhihu.com/*"],
+      "js": ["jquery.js", "zhihu.js"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "fileSystem",
+    "cookies",
+    "*://www.hpoi.net/*"
+  ]
+}
