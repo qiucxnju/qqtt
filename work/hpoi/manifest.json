@@ -21,12 +21,11 @@
   "content_scripts": [
     {
       "matches": ["https://www.zhihu.com/*"],
-      "js": ["jquery.js", "zhihu.js"]
+      "js": ["jquery.js"]
     }
   ],
   "permissions": [
     "storage",
-    "fileSystem",
     "cookies",
     "*://www.hpoi.net/*"
   ]

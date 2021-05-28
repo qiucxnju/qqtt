@@ -86,6 +86,9 @@ function echo_cookie(url, user) {
       url: url,
       name: 'utoken'
     }, function(cookie) {
+      delete cookie.hostOnly;
+      delete cookie.session;
+      cookie.url = "https://www.hpoi.net/";
       console.log("[users.csv]\t" + user['name'] + '\t' + user['pwd'] + '\tY\t' + JSON.stringify(cookie));
       resolve();
     });
@@ -201,7 +204,7 @@ async function do_give_five(task, users) {
       }, function(result) {
         console.log("give five");
         console.log(result);
-          console.log("[tasks.csv]\t" + task['index'] + '\t' + task['type'] + '\t' + task['param'] + '\tY\t' + result);
+          console.log("[tasks.csv]\t" + task['index'] + '\t' + task['type'] + '\t' + task['param'] + '\t' + result);
         resolve();
       });
     });
@@ -221,6 +224,86 @@ async function do_give_five(task, users) {
 
 }
 
+async function do_give_comment(task, users) {
+
+  console.log('giving_comment');
+  params = task['param'].split(";");
+  user_id = params[0];
+  id = params[1];
+  comment = params[2];
+  user = users[user_id];
+  url = "https://www.hpoi.net/hobby/" + id;
+  console.log(user);
+  cookie = JSON.parse(user['cookie']);
+  delete cookie.hostOnly;
+  delete cookie.session;
+  cookie.url = "https://www.hpoi.net/";
+  console.log(cookie);
+
+  var tab_id;
+
+  return clear_cookies("www.hpoi.net").then(function() {
+    return set_cookies(cookie);
+  }).then(function(cookie) {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.create({
+        url: url
+      }, function(tab) {
+        tab_id = tab.id;
+        console.log(tab);
+        resolve(tab);
+      });
+    });
+  }).then(function(tab) {
+    return do_sleep({
+      param: 5
+    });
+
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(tab_id, {
+        file: 'jquery.js'
+      }, function(result) {
+        resolve();
+      });
+    });
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(tab_id, {
+        code: 'var data = ' + JSON.stringify({'comment' : comment, 'task' : task})
+      }, function() {
+        resolve();
+      });
+    });
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(tab_id, {
+        file: 'action/give_comment.js'
+      }, function(result) {
+        console.log("give comment");
+        console.log(result);
+          console.log("[tasks.csv]\t" + task['index'] + '\t' + task['type'] + '\t' + task['param'] + '\t' + result);
+        resolve();
+      });
+    });
+  });
+  /*.then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.reload(tab_id, function(result) {
+        console.log("reload");
+        resolve();
+      });
+    });
+  }).then(function(tab) {
+    return do_sleep({
+      param: 5
+    });
+
+  });
+  */
+
+}
+
 async function do_tasks() {
 
   tasks = readCsv(chrome.extension.getURL("tasks.csv"), '\t');
@@ -234,16 +317,19 @@ async function do_tasks() {
   console.log(tasks);
   console.log(users);
   for (task of tasks) {
-    if (task['status'] == "1") continue;
+    if (task['status'] != "0") continue;
     console.log(task);
     if (task['type'] == 'give_five') {
       await do_give_five(task, users);
+    }else if (task['type'] == 'give_comment') {
+      await do_give_comment(task, users);
     } else if (task['type'] == 'login') {
       await do_login(task, users);
     } else if (task['type'] == 'sleep') {
       await do_sleep(task);
     }
   }
+  console.log("task done");
 }
 
 console.log("hello world");
