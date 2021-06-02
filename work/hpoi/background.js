@@ -304,9 +304,14 @@ async function do_give_comment(task, users) {
 
 }
 
-async function do_tasks() {
+async function do_tasks(filename) {
 
-  tasks = readCsv(chrome.extension.getURL("tasks.csv"), '\t');
+  if (filename){
+    filename = "./done/" + filename + ".csv";
+  }else{
+    filename = "tasks.csv";
+  }
+  tasks = readCsv(chrome.extension.getURL(filename), '\t');
   users = readCsv(chrome.extension.getURL("users.csv"), '\t');
   user_m = {}
   for (user of users) {
