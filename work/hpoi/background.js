@@ -89,7 +89,7 @@ function echo_cookie(url, user) {
       delete cookie.hostOnly;
       delete cookie.session;
       cookie.url = "https://www.hpoi.net/";
-      console.log("[users.csv]\t" + user['name'] + '\t' + user['pwd'] + '\tY\t' + JSON.stringify(cookie));
+      console.log("[users.csv]\t" + user['index'] + user['name'] + '\t' + user['pwd'] + '\tY\t' + JSON.stringify(cookie));
       resolve();
     });
   });
@@ -104,7 +104,8 @@ async function do_login(task, users) {
   return clear_cookies("www.hpoi.net").then(function() {
     return new Promise((resolve, reject) => {
       chrome.tabs.create({
-        url: "https://www.hpoi.net/user/login"
+        url: "https://www.hpoi.net/user/login",
+        active:false,
       }, function(tab) {
         tab_id = tab.id;
         console.log(tab);
@@ -153,12 +154,11 @@ async function do_give_five(task, users) {
   user_id = params[0];
   id = params[1];
   hobby_id = params[2];
+  score = params[3]?parseInt(params[3]):5;
   user = users[user_id];
   url = "https://www.hpoi.net/hobby/" + id;
   console.log(user);
   cookie = JSON.parse(user['cookie']);
-  delete cookie.hostOnly;
-  delete cookie.session;
   cookie.url = "https://www.hpoi.net/";
   console.log(cookie);
 
@@ -169,7 +169,8 @@ async function do_give_five(task, users) {
   }).then(function(cookie) {
     return new Promise((resolve, reject) => {
       chrome.tabs.create({
-        url: url
+        url: url,
+        active:false,
       }, function(tab) {
         tab_id = tab.id;
         console.log(tab);
@@ -192,7 +193,7 @@ async function do_give_five(task, users) {
   }).then(function() {
     return new Promise((resolve, reject) => {
       chrome.tabs.executeScript(tab_id, {
-        code: 'var data = ' + JSON.stringify({'hobby_id' : hobby_id, 'task' : task})
+        code: 'var data = ' + JSON.stringify({'hobby_id' : hobby_id, score:score, 'task' : task})
       }, function() {
         resolve();
       });
@@ -224,6 +225,38 @@ async function do_give_five(task, users) {
 
 }
 
+
+async function do_show(task, users) {
+
+  console.log('show');
+  user_id = task['param'];
+  user = users[user_id];
+  url = "https://www.hpoi.net/index";
+  console.log(user);
+  cookie = JSON.parse(user['cookie']);
+  cookie.url = "https://www.hpoi.net/";
+  console.log(cookie);
+
+  var tab_id;
+
+  return clear_cookies("www.hpoi.net").then(function() {
+    return set_cookies(cookie);
+  }).then(function(cookie) {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.create({
+        url: url,
+        active:false,
+      }, function(tab) {
+        tab_id = tab.id;
+        console.log(tab);
+        resolve(tab);
+      });
+    });
+  });
+  console.log("[tasks.csv]\t" + task['index'] + '\t' + task['type'] + '\t' + task['param'] + '\t 1');
+
+}
+
 async function do_give_comment(task, users) {
 
   console.log('giving_comment');
@@ -235,8 +268,6 @@ async function do_give_comment(task, users) {
   url = "https://www.hpoi.net/hobby/" + id;
   console.log(user);
   cookie = JSON.parse(user['cookie']);
-  delete cookie.hostOnly;
-  delete cookie.session;
   cookie.url = "https://www.hpoi.net/";
   console.log(cookie);
 
@@ -247,7 +278,8 @@ async function do_give_comment(task, users) {
   }).then(function(cookie) {
     return new Promise((resolve, reject) => {
       chrome.tabs.create({
-        url: url
+        url: url,
+        active:false,
       }, function(tab) {
         tab_id = tab.id;
         console.log(tab);
@@ -330,6 +362,8 @@ async function do_tasks(filename) {
       await do_give_comment(task, users);
     } else if (task['type'] == 'login') {
       await do_login(task, users);
+    } else if (task['type'] == 'show') {
+      await do_show(task, users);
     } else if (task['type'] == 'sleep') {
       await do_sleep(task);
     }

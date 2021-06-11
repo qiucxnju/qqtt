@@ -22,12 +22,13 @@
 click();
 */
 console.log(data);
-hobby_id = data['hobby_id']
+hobby_id = data['hobby_id'];
+score = data['score'];
 var r;
 $.ajax({
 	type : "POST",
 	url : "hobby/rating/add/" + hobby_id,
-	data : {'rating' : 5},
+	data : {'rating' : score},
     async: false,
 	success : function(result) {
 		console.log(result);
