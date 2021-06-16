@@ -89,7 +89,7 @@ function echo_cookie(url, user) {
       delete cookie.hostOnly;
       delete cookie.session;
       cookie.url = "https://www.hpoi.net/";
-      console.log("[users.csv]\t" + user['index'] + user['name'] + '\t' + user['pwd'] + '\tY\t' + JSON.stringify(cookie));
+      console.log("[users.csv]\t" + user['index'] + '\t' + user['name'] + '\t' + user['pwd'] + '\tY\t' + JSON.stringify(cookie));
       resolve();
     });
   });
@@ -265,7 +265,7 @@ async function do_give_comment(task, users) {
   id = params[1];
   comment = params[2];
   user = users[user_id];
-  url = "https://www.hpoi.net/hobby/" + id;
+  url = "https://www.hpoi.net" + id;
   console.log(user);
   cookie = JSON.parse(user['cookie']);
   cookie.url = "https://www.hpoi.net/";
