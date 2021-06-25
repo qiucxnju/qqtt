@@ -225,6 +225,85 @@ async function do_give_five(task, users) {
 
 }
 
+async function do_comment_like(task, users) {
+
+  console.log('giving_five');
+  params = task['param'].split(";");
+  user_id = params[0];
+  id = params[1];
+  hobby_id = params[2];
+  comment_no = params[3];
+  comment_id = params[4];
+  user = users[user_id];
+  url = "https://www.hpoi.net/hobby/" + id;
+  console.log(user);
+  cookie = JSON.parse(user['cookie']);
+  cookie.url = "https://www.hpoi.net/";
+  console.log(cookie);
+
+  var tab_id;
+
+  return clear_cookies("www.hpoi.net").then(function() {
+    return set_cookies(cookie);
+  }).then(function(cookie) {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.create({
+        url: url,
+        active:false,
+      }, function(tab) {
+        tab_id = tab.id;
+        console.log(tab);
+        resolve(tab);
+      });
+    });
+  }).then(function(tab) {
+    return do_sleep({
+      param: 5
+    });
+
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(tab_id, {
+        file: 'jquery.js'
+      }, function(result) {
+        resolve();
+      });
+    });
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(tab_id, {
+        code: 'var data = ' + JSON.stringify({'hobby_id' : hobby_id, 'comment_id':comment_id, 'task' : task})
+      }, function() {
+        resolve();
+      });
+    });
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.executeScript(tab_id, {
+        file: 'action/comment_like.js'
+      }, function(result) {
+        console.log("comment like");
+        console.log(result);
+          console.log("[tasks.csv]\t" + task['index'] + '\t' + task['type'] + '\t' + task['param'] + '\t' + result);
+        resolve();
+      });
+    });
+  }).then(function() {
+    return new Promise((resolve, reject) => {
+      chrome.tabs.reload(tab_id, function(result) {
+        console.log("reload");
+        resolve();
+      });
+    });
+  }).then(function(tab) {
+    return do_sleep({
+      param: 5
+    });
+
+  });
+
+}
+
 
 async function do_show(task, users) {
 
@@ -360,6 +439,8 @@ async function do_tasks(filename) {
       await do_give_five(task, users);
     }else if (task['type'] == 'give_comment') {
       await do_give_comment(task, users);
+    }else if (task['type'] == 'comment_like') {
+      await do_comment_like(task, users);
     } else if (task['type'] == 'login') {
       await do_login(task, users);
     } else if (task['type'] == 'show') {
